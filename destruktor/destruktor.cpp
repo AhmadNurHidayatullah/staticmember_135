@@ -25,6 +25,11 @@ angka::~angka() { //Destructor
     cout << "alamat array sudah dilepaskan" << endl;
 }
 
+void angka::cetakData() {
+    for (int i = 1; i <= panjang; i++) {
+        cout << i << "=" << arr[i] << endl;
+    }
+}
 void angka::isiData() {
     for (int i = 1; i <= panjang; i++) {
         cout << i << "="; cin >> arr[i];
