@@ -15,7 +15,9 @@ public:
 
 int mahasiswa::nim = 0;
 
-
+void mahasiswa::setId() {
+    id = ++nim;
+}
 int main()
 {
     std::cout << "Hello World!\n";
