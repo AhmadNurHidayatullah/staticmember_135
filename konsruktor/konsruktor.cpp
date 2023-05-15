@@ -35,9 +35,19 @@ void mahasiswa::cetak() {
     cout << endl << "Nim =" << nim << endl;
     cout << " Nama = " << nama << endl;
 }
-int main()
-{
-    std::cout << "Hello World!\n";
+
+int main(){
+    mahasiswa mhs1;
+    mahasiswa mhs2(20);
+    mahasiswa mhs3("indra");
+    mahasiswa mhs4(30, "fauzan");
+
+    mhs1.cetak();
+    mhs2.cetak();
+    mhs3.cetak();
+    mhs4.cetak();
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
