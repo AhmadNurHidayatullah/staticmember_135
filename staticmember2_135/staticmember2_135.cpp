@@ -14,7 +14,16 @@ public:
     {
         return this->judul;
     }
-};
+
+}bukunya;
+
+int main()
+{
+    //bukunya.setjudul("matematika");
+    //cout << bukunya.getjudul();
+    cout << bukunya.setjudul("matematika").getjudul();//chain function calls
+    return 0;
+}
 int main()
 {
     std::cout << "Hello World!\n";
