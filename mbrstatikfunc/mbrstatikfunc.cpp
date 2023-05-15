@@ -29,10 +29,24 @@ void mahasiswa::printAll() {
     cout << "Nama = " << nama << endl;
     cout << endl;
 }
-int main()
-{
-    std::cout << "Hello World!\n";
+
+int main() {
+    mahasiswa mhs1("sri Dadi");
+    mahasiswa mhs2("Budi Jatmiko");
+    mahasiswa::setNim(9); //mengakses Nim melalui static member function "setNim'
+    mahasiswa mhs3("Andi janu");
+    mahasiswa mhs4("joko wahono");
+
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    cout << "akses dari luar object = " << mahasiswa::getNim() << endl; //mengakses nim melalui static member function "getNim"
+
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
