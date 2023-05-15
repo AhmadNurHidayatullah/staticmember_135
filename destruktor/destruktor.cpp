@@ -18,6 +18,20 @@ angka::angka(int i) { // contructor
     isiData();
 }
 
+angka::~angka() { //Destructor
+    cout << endl;
+    cetakData();
+    delete[]arr;
+    cout << "alamat array sudah dilepaskan" << endl;
+}
+
+void angka::isiData() {
+    for (int i = 1; i <= panjang; i++) {
+        cout << i << "="; cin >> arr[i];
+    }
+    cout << endl;
+}
+
 int main()
 {
     std::cout << "Hello World!\n";
