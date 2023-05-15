@@ -24,10 +24,20 @@ void mahasiswa::printAll() {
     cout << "Nama = " << nama << endl;
     cout << endl;
 }
-int main()
-{
-    std::cout << "Hello World!\n";
+
+void main() {
+    mahasiswa mhs1("Lia kurnia");
+    mahasiswa mhs2("Asroni");
+    mahasiswa mhs3("Andi kurniawan");
+    mahasiswa mhs4("joko purbo");
+
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+    return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
